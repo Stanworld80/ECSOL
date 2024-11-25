@@ -18,11 +18,9 @@ require 'db_connection.php';
     <main>
 <?php 
 echo "_ENV:";
-echo $_ENV;
+echo '<pre>'; print_r($_ENV); echo '</pre>';
 echo "globals:";
-foreach($GLOBALS as $v){
-    echo $v . "<br>";
-}
+ echo '<pre>'; print_r($GLOBALS); echo '</pre>';
 ?>
         <section>
             <h2>Bienvenue au laboratoire ECSOL</h2>
