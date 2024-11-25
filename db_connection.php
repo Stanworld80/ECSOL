@@ -1,6 +1,6 @@
 <?php
 $dbConn = 'gcp-sandbox-441117:europe-west9:mysql-test-gcp';
-$dbIPpublic = '	34.163.85.47';
+$dbIPpublic = '34.163.85.47';
 $dbIPprivate = '';
 $dbName = 'ecsoldb';
 $dbUser = 'stan';
