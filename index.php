@@ -18,15 +18,7 @@ echo $GLOBALS;
 <body>
     <header>
         <h1>ECSOL - Experimental Computer Science Online Laboratory</h1>
-        <nav>
-            <ul>
-                <li><a href="index.php">Accueil</a></li>
-                <li><a href="about.php">À propos</a></li>
-                <li><a href="experiments.php">Expériences en cours</a></li>
-                <li><a href="research.php">Veille technologique</a></li>
-                <li><a href="contact.php">Contact</a></li>
-            </ul>
-        </nav>
+          <?php include 'navigation.php'; ?>
     </header>
     <main>
         <section>
