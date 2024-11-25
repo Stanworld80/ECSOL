@@ -1,5 +1,10 @@
 <?php
 require 'db_connection.php';
+echo "_ENV:";
+echo $_ENVS;
+
+echo "globals:";
+echo $GLOBALS;
 ?>
 
 <!DOCTYPE html>
