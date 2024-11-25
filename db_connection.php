@@ -4,6 +4,7 @@ $dbIPpublic = '34.163.85.47';
 $dbIPprivate = '';
 $dbName = 'ecsoldb';
 $dbUser = "stan";
+ echo '<pre>'; print_r($GLOBALS); echo '</pre>';
 $dbPass =  $GLOBALS["CLOUDSQLSTANPASS"];
 $dsn = "mysql:unix_socket=/cloudsql/{$dbConn};dbname={$dbName}";
 
