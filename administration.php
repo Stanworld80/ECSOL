@@ -4,8 +4,8 @@ session_start();
 // Vérification du mot de passe pour accéder à la page d'administration
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $password = null
-        if (isset( $_POST['password']){
+        $password = null;
+        if (isset($_POST['password']){
           $password = $_POST['password'];
         }
         if ($password === 'ecsoladmin') {
