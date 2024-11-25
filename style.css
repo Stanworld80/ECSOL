@@ -40,14 +40,3 @@ footer {
     width: 100%;
     bottom: 0;
 }
-Exemple de Script JavaScript pour la Validation de Formulaire
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.querySelector('form');
-    form.addEventListener('submit', function(event) {
-        const email = form.querySelector('input[type="email"]').value;
-        if (!email.includes('@')) {
-            alert('Veuillez entrer une adresse email valide.');
-            event.preventDefault();
-        }
-    });
-});
