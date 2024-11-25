@@ -22,7 +22,7 @@ echo $_ENV;
 echo "globals:";
 foreach($GLOBALS as $v){
     echo $v . "<br>";
-
+}
 ?>
         <section>
             <h2>Bienvenue au laboratoire ECSOL</h2>
