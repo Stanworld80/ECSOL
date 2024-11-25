@@ -1,11 +1,12 @@
 <?php
-$host = '127.0.0.1';
-$db = 'ecsol';
-$user = 'stan';
-$pass = 'cloudSQL=Stan2024';
-$charset = 'utf8mb4';
+$dbConn = 'gcp-sandbox-441117:europe-west9:mysql-test-gcp';
+$dbIPpublic = '	34.163.85.47';
+$dbIPprivate = '';
+$dbName = 'ecsoldb';
+$dbUser = 'stan';
+$dbPass = 'cloudSQL=Stan2024';
+$dsn = "mysql:unix_socket=/cloudsql/{$dbConn};dbname={$dbName}";
 
-$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 $options = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
@@ -13,7 +14,7 @@ $options = [
 ];
 
 try {
-    $pdo = new PDO($dsn, $user, $pass, $options);
+    $pdo = new PDO($dsn, $dbuser, $dbpass, $options);
 } catch (\PDOException $e) {
     throw new \PDOException($e->getMessage(), (int)$e->getCode());
 }
