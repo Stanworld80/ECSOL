@@ -16,12 +16,6 @@ require 'db_connection.php';
           <?php include 'navigation.php'; ?>
     </header>
     <main>
-<?php 
-echo "_ENV:";
-echo '<pre>'; print_r($_ENV); echo '</pre>';
-echo "globals:";
- echo '<pre>'; print_r($GLOBALS); echo '</pre>';
-?>
         <section>
             <h2>Bienvenue au laboratoire ECSOL</h2>
             <p>Le laboratoire ECSOL est dédié à la recherche en informatique expérimentale. Découvrez nos projets, notre équipe, et nos dernières découvertes.</p>
