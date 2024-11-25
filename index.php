@@ -1,10 +1,5 @@
 <?php
 require 'db_connection.php';
-echo "_ENV:";
-echo $_ENVS;
-
-echo "globals:";
-echo $GLOBALS;
 ?>
 
 <!DOCTYPE html>
@@ -21,6 +16,13 @@ echo $GLOBALS;
           <?php include 'navigation.php'; ?>
     </header>
     <main>
+<? 
+echo "_ENV:";
+echo $_ENVS;
+
+echo "globals:";
+echo $GLOBALS;
+?>
         <section>
             <h2>Bienvenue au laboratoire ECSOL</h2>
             <p>Le laboratoire ECSOL est dédié à la recherche en informatique expérimentale. Découvrez nos projets, notre équipe, et nos dernières découvertes.</p>
