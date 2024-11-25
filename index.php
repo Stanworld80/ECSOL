@@ -16,7 +16,7 @@ require 'db_connection.php';
           <?php include 'navigation.php'; ?>
     </header>
     <main>
-<? 
+<?php 
 echo "_ENV:";
 echo $_ENVS;
 
