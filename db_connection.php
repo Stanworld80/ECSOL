@@ -3,8 +3,8 @@ $dbConn = 'gcp-sandbox-441117:europe-west9:mysql-test-gcp';
 $dbIPpublic = '34.163.85.47';
 $dbIPprivate = '';
 $dbName = 'ecsoldb';
-$dbUser = 'stan';
-$dbPass = 'cloudSQL=Stan2024';
+$dbUser = "stan";
+$dbPass =  $GLOABLS["CLOUDSQLSTANPASS"]
 $dsn = "mysql:unix_socket=/cloudsql/{$dbConn};dbname={$dbName}";
 
 $options = [
