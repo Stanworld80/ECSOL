@@ -1,3 +1,7 @@
+<?php
+require 'db_connection.php';
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -11,11 +15,11 @@
         <h1>ECSOL - Experimental Computer Science Online Laboratory</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="about.html">À propos</a></li>
-                <li><a href="experiments.html">Expériences en cours</a></li>
-                <li><a href="research.html">Veille technologique</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.php">Accueil</a></li>
+                <li><a href="about.php">À propos</a></li>
+                <li><a href="experiments.php">Expériences en cours</a></li>
+                <li><a href="research.php">Veille technologique</a></li>
+                <li><a href="contact.php">Contact</a></li>
             </ul>
         </nav>
     </header>
